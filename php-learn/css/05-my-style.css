@@ -1,0 +1,138 @@
+body, footer{
+    background-color: #1f3142;
+    color: #fff;
+}
+
+p {
+    line-height: 2;
+}
+
+header {
+    background-color: #1f3142 !important;
+}
+
+.p-5 {
+    padding: 2rem !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: #1f3141 !important;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(248 249 250);
+    font-size: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(248 249 250) !important;
+}
+
+.nav-link:hover {
+    color: rgb(248 249 250) !important;
+    text-decoration: underline;
+}
+
+.navbar-brand:hover {
+    color: rgb(248 249 250) !important;
+    text-decoration: underline;
+}
+
+hr {
+    margin: 0;
+}
+
+.main-container h2{
+    padding-bottom: 2rem;
+}
+
+.socialLinks-container {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    background-color: #1f3141;
+    color: #1f3142;
+}
+
+.socialLinks-container h3 {
+    padding-bottom: 2rem;
+    color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    color: #1f3141;
+}
+
+a:hover {
+    color: #fff;
+}
+
+h4 {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.socialLinks-container h4:hover {
+    background-color: #274f77;
+}
+
+/* hobbies page styles */
+.hobbies-h-menu {
+    padding-left: .5rem;
+}
+.hobbies-container {
+    min-width: 100vw;
+    padding: 2rem 2rem .5rem;
+}
+
+.hobbies-container h1 {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.hobbies-h3 {
+    cursor: pointer;
+}
+
+.hobbies-icon {
+    content: url("/img/icon-plus.png");
+    vertical-align: -50%;
+}
+
+.hobbies-desc-img {
+    max-width: 100%;
+}
+
+.hobbies-social-links {
+    padding-left: 2rem;
+}
+
+/* hobbies page active states */
+.hobbies-icon.active {
+    content: url('/img/icon-minus.png');
+}
+
+.hobbies-p.active {
+    display: block;
+}
+
+button.accordion-button {
+    background: #f8f9fa;
+}
+
+.accordion-header {
+    margin-bottom: 0;
+    color: #1f3141;
+}
+
+.accordion-item {
+    background-color: #f8f9fa;
+    color: #1f3141;
+}
+
+footer {
+    background-color: #1f3141 !important;
+}

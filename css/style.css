@@ -1,0 +1,43 @@
+body {
+    background-color: #000000 !important;
+    padding: 10px;
+}
+
+
+.rowSpacer {
+margin-top:20px;
+margin-bottom:20px;
+}
+
+h1 {
+    color: #ffffff !important;
+}
+
+.p-5.bg-primary.text-white.text-center {
+    background: #0b0b0b !important;
+    border-radius: 1rem;
+    border: solid 3px;
+    border-color: #1b1c1c;
+}
+
+/* buttons */
+a.btn.btn-outline-primary {
+    color: #000000;
+    border: none;
+    background: #6FFD96;
+    padding: .5rem 2rem;
+    transition: ease-out 1s;
+}
+
+a.btn.btn-outline-primary:hover {
+    background: #5576ED;
+}
+
+.col-md-12 {
+    margin: 2rem 0
+}
+
+footer.footer.mt-auto.py-3.bg-light {
+    background: linear-gradient(46.87deg, #5576ED 0%, #6FFD96 96.94%);
+    color: #000000 !important;
+}

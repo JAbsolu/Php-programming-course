@@ -1,0 +1,249 @@
+body {
+    background-color: #000000;
+    color: #fff;
+    position: absolute;
+    line-height: 2;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-accent {
+    color: #6FFD96;
+    font-weight: bold;
+}
+
+.nav {
+    padding: 1rem 0;
+    max-width: 100%;
+    display: none;
+    align-items: center;
+    background: linear-gradient(46.87deg, #5576ED 0%, #6FFD96 96.94%);
+    transition: all ease-in 500ms;
+}
+
+nav ul {
+    display: block;
+    justify-content: left;
+}
+
+nav li {
+    padding-top: 1rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.h-menu {
+    display: block;
+    cursor: pointer;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    padding-left: .5rem;
+    transition: all ease-in 500ms;
+}
+
+.h-menu span {
+    display: flex;
+    margin: .5rem;
+    background-color: #fff;
+    width: 2.5rem;
+    height: .2rem;
+    transition: all ease-in 500ms;
+}
+/* mobil nav show class */
+
+nav.show {
+    display: block;
+}
+
+.h-menu span:nth-child(1).show {
+    width: 0;
+}
+
+.h-menu span:nth-child(2).show {
+    transform: rotate(-90deg);
+    margin-bottom: -.8rem;
+}
+
+.h-menu span:nth-child(3).show {
+    transform: rotate(-180deg);
+}
+
+.main-container {
+    background-color: #0b0b0b;
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-column-gap: 1rem;
+    padding: 4rem 1rem;
+}
+
+.main-container h1 {
+    padding: 2rem 0;
+}
+
+
+.main-container div {
+    padding: .5rem 1rem;
+}
+
+.main-container img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.social-links {
+    background: #0b0b0b;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    padding-left: 22rem;
+    padding-right: 2rem;
+    align-items: center;
+    display: block;
+}
+
+.social-links ul {
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.social-links li {
+    list-style: none;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    padding: .5rem 2rem;
+    background-color: #6FFD96;
+    border-radius: .5rem;
+    color: #000;
+}
+
+.social-links a:hover {
+    background-color: #5576ED;
+}
+
+/* hobbies page styles */
+.hobbies-h-menu {
+    padding-left: .5rem;
+}
+.hobbies-container {
+    background-color: #0b0b0b;
+    min-width: 100vw;
+    padding: 5rem;
+}
+
+.hobbies-container h1 {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.hobbies-h3 {
+    cursor: pointer;
+}
+
+.hobbies-icon {
+    content: url('/php-learn/img/icon-plus.png');
+    vertical-align: -50%;
+}
+
+.hobbies-p {
+    max-width: 60%;
+    display: none;
+}
+
+.hobbies-desc-img {
+    max-width: 100%;
+}
+
+.hobbies-social-links {
+    padding-left: 2rem;
+}
+
+/* hobbies page active states */
+.hobbies-icon.active {
+    content: url('/php-learn/img/icon-minus.png');
+}
+
+.hobbies-p.active {
+    display: block;
+}
+
+
+/* media responsive */
+@media (max-width: 900px) {
+    .h-menu {
+        padding: .5rem;
+    }
+
+    .h-menu.show {
+        padding-bottom: 1.2rem;
+    }
+
+    .main-container {
+        display: block;
+        padding: 1.5rem;
+    }
+
+    .main-container img {
+        max-width: 40%;
+    }
+
+    .main-container div {
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .main-container div p {
+        text-align: left;
+    }
+
+    .main-container div h1 {
+        margin: 1.5rem 0;
+    }
+
+    .social-links {
+        padding:0 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-container img {
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .main-container div h1 {
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    .hobbies-container {
+        padding-top: 1rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .social-links ul{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .hobbies-p {
+        min-width: 100%;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
